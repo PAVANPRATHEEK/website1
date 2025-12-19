@@ -1,0 +1,129 @@
+:root {
+  /* Default Theme (Dark / Ferrari Mode) */
+  --bg-color: #0d0d0d;
+  /* Carbon Black */
+  --text-color: #ffffff;
+  --accent-color: #FFF200;
+  /* Modena Yellow */
+  --hero-gradient: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+  --name-gradient: linear-gradient(90deg, #FF2800, #D40000, #FFF200);
+  /* Rosso Corsa -> Yellow */
+  --card-bg: rgba(255, 40, 0, 0.05);
+  /* Subtle Red Tint */
+  --card-hover-bg: rgba(255, 40, 0, 0.15);
+  --border-color: rgba(255, 40, 0, 0.3);
+  /* Red Border */
+  --nav-bg: rgba(13, 13, 13, 0.9);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --accent-gradient: linear-gradient(45deg, #FF2800, #D40000);
+}
+
+[data-theme='light'] {
+  /* Scuderia Light Mode */
+  --bg-color: #f4f4f4;
+  /* Racing White */
+  --text-color: #1a1a1a;
+  --accent-color: #D40000;
+  /* Ferrari Red Text */
+  --hero-gradient: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+  --name-gradient: linear-gradient(90deg, #D40000, #FF2800);
+  --card-bg: #ffffff;
+  --card-hover-bg: #fff5f5;
+  /* Light Red tint */
+  --border-color: rgba(212, 0, 0, 0.2);
+  --nav-bg: rgba(227, 242, 253, 0.9);
+  /* Light Blue */
+  --input-bg: #ffffff;
+  --accent-gradient: linear-gradient(45deg, #FF2800, #D40000);
+}
+
+/* Cleaning up default App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* =========================================
+   Responsive Design System
+   ========================================= */
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--hero-gradient);
+  transition: background 0.3s;
+  gap: 50px;
+  padding: 0 10%;
+}
+
+.hero-profile-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(45deg, #0575E6, #021B79, #0575E6);
+  background-size: 200% 200%;
+  animation: gradient-spin 3s linear infinite;
+  box-shadow: 0 0 30px rgba(5, 117, 230, 0.4);
+  flex-shrink: 0;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+  background: var(--name-gradient);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(5, 117, 230, 0.5));
+  letter-spacing: 5px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Navbar Base Styles (Desktop/Windows) */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.3s;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
