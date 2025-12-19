@@ -6,8 +6,8 @@
   --accent-color: #FFF200;
   /* Modena Yellow */
   --hero-gradient: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
-  --name-gradient: linear-gradient(90deg, #FF2800, #D40000, #FFF200);
-  /* Rosso Corsa -> Yellow */
+  --name-gradient: linear-gradient(90deg, #D4AF37, #F0E68C, #D4AF37);
+  /* Elegant Gold - Posh Look */
   --card-bg: rgba(255, 40, 0, 0.05);
   /* Subtle Red Tint */
   --card-hover-bg: rgba(255, 40, 0, 0.15);
@@ -26,7 +26,7 @@
   --accent-color: #D40000;
   /* Ferrari Red Text */
   --hero-gradient: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
-  --name-gradient: linear-gradient(90deg, #D40000, #FF2800);
+  --name-gradient: linear-gradient(90deg, #B8860B, #DAA520);
   --card-bg: #ffffff;
   --card-hover-bg: #fff5f5;
   /* Light Red tint */
