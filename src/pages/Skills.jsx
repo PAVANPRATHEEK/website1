@@ -72,6 +72,33 @@ const Skills = () => {
                     (It's gonna be compliant with Michelin stars, promise.)
                 </span>
             </motion.p>
+
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 1, duration: 0.8 }}
+                style={{
+                    marginTop: '40px',
+                    padding: '30px 50px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    borderRadius: '12px',
+                    backdropFilter: 'blur(10px)',
+                    maxWidth: '400px'
+                }}
+            >
+                <h3 style={{
+                    fontSize: '1.8rem',
+                    color: 'var(--text-color)',
+                    fontFamily: "'Orbitron', sans-serif",
+                    letterSpacing: '2px',
+                    margin: '0',
+                    textTransform: 'uppercase'
+                }}>
+                    Skills Coming Soon
+                </h3>
+            </motion.div>
         </section>
     );
 };
