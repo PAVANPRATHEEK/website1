@@ -56,7 +56,7 @@ const Hero = () => {
                         fontFamily: "'Orbitron', sans-serif",
                         background: 'var(--name-gradient)',
                         backgroundSize: '200% auto',
-                        animation: 'shimmer 3s linear infinite',
+                        
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         filter: 'drop-shadow(0 0 10px rgba(5, 117, 230, 0.5))',
