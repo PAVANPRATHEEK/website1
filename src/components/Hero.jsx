@@ -89,7 +89,7 @@ const Hero = () => {
                         fontWeight: '400',
                         letterSpacing: '0.3px'
                     }}>
-                        Curious by nature and always experimenting, I am a first-year student at NIT Warangal from the Mechanical Engineering department, currently exploring everything that grabs my interest—be it core mechanical areas or tech-related fields. I enjoy learning by trying things out, building projects, and figuring things out along the way, and I am also learning how AI automations work. Always learning, always evolving, and enjoying the process one step at a time.
+                        Curious by nature and always experimenting, I am a first-year student at <span style={{ color: 'var(--primary-color)', fontWeight: '600' }}>NIT Warangal</span> from the Mechanical Engineering department, currently exploring everything that grabs my interest—be it core mechanical areas or tech-related fields. I enjoy learning by trying things out, building projects, and figuring things out along the way, and I am also learning how AI automations work. Always learning, always evolving, and enjoying the process one step at a time.
                     </p>
                 </motion.div>
             </div>
