@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Playfair+Display:wght@400;700;900&family=Lora:wght@400;500;600&display=swap');
 
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -14,7 +14,7 @@
   --primary-color: #646cff;
   --accent-gradient: linear-gradient(90deg, #00f260 0%, #0575e6 100%);
   --hero-gradient: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
-  --name-gradient: linear-gradient(270deg, #00f260, #0575e6, #8e44ad, #00f260);
+  --name-gradient: linear-gradient(135deg, #d4d4d4 0%, #ffffff 20%, #a8a8a8 40%, #f0f0f0 60%, #c0c0c0 80%, #ffffff 100%);
   --card-hover-bg: rgba(255, 255, 255, 0.1);
 
   font-synthesis: none;
@@ -24,14 +24,14 @@
 }
 
 [data-theme="light"] {
-  --bg-color: #f4f6f8;
-  --text-color: #1a1a1a;
-  --card-bg: #ffffff;
+  --bg-color: #faf8f3;
+  --text-color: #2d2d2d;
+  --card-bg: #fefdfb;
   --border-color: rgba(0, 0, 0, 0.08);
-  --input-bg: #f9fafb;
+  --input-bg: #f9f7f2;
   --primary-color: #0575e6;
   --accent-gradient: linear-gradient(135deg, #0575e6 0%, #00f260 100%);
-  --hero-gradient: radial-gradient(circle at 50% 50%, #ffffff 0%, #f4f6f8 100%);
+  --hero-gradient: radial-gradient(circle at 50% 50%, #fefdfb 0%, #faf8f3 100%);
   --name-gradient: linear-gradient(270deg, #1a1a1a, #1a1a1a);
   --card-hover-bg: rgba(0, 0, 0, 0.05);
 }

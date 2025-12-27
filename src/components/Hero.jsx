@@ -22,11 +22,6 @@ const Hero = () => {
                     width: '180px',
                     height: '180px',
                     borderRadius: '50%',
-                    padding: '4px',
-                    background: 'linear-gradient(45deg, #0575E6, #021B79, #0575E6)',
-                    backgroundSize: '200% 200%',
-                    animation: 'gradient-spin 3s linear infinite',
-                    boxShadow: '0 0 30px rgba(5, 117, 230, 0.4)',
                     flexShrink: 0
                 }}
             >
@@ -37,8 +32,7 @@ const Hero = () => {
                         width: '100%',
                         height: '100%',
                         borderRadius: '50%',
-                        objectFit: 'cover',
-                        border: '4px solid var(--bg-color)'
+                        objectFit: 'cover'
                     }}
                 />
             </motion.div>
@@ -52,29 +46,52 @@ const Hero = () => {
                     style={{
                         fontSize: '5rem',
                         fontWeight: '900',
-                        marginBottom: '10px',
-                        fontFamily: "'Orbitron', sans-serif",
+                        marginTop: '40px',
+                        marginBottom: '20px',
+                        fontFamily: "'Playfair Display', serif",
                         background: 'var(--name-gradient)',
                         backgroundSize: '200% auto',
-                        
+
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
-                        filter: 'drop-shadow(0 0 10px rgba(5, 117, 230, 0.5))',
-                        letterSpacing: '5px',
-                        textAlign: 'left'
+                        filter: 'drop-shadow(0 0 15px rgba(255, 255, 255, 0.3))',
+                        letterSpacing: '3px',
+                        textAlign: 'left',
+                        lineHeight: '1.2'
                     }}
                 >
                     PAVAN PRATHEEK
                 </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5, duration: 1 }}
                     viewport={{ once: true }}
-                    style={{ fontSize: '1.5rem', color: 'var(--text-color)', marginBottom: '20px', opacity: 0.8, textAlign: 'left' }}
+                    style={{
+                        background: 'var(--card-bg)',
+                        border: '1px solid var(--border-color)',
+                        borderRadius: '20px',
+                        padding: '30px 35px',
+                        width: '100%',
+                        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                        backdropFilter: 'blur(10px)',
+                        marginBottom: '20px'
+                    }}
                 >
-                    Building the future, one pixel at a time.
-                </motion.p>
+                    <p style={{
+                        fontSize: '1.15rem',
+                        color: 'var(--text-color)',
+                        margin: '0',
+                        opacity: 0.88,
+                        textAlign: 'left',
+                        lineHeight: '1.9',
+                        fontFamily: "'Lora', serif",
+                        fontWeight: '400',
+                        letterSpacing: '0.3px'
+                    }}>
+                        Curious by nature and always experimenting, I am a first-year student at NIT Warangal from the Mechanical Engineering department, currently exploring everything that grabs my interest—be it core mechanical areas or tech-related fields. I enjoy learning by trying things out, building projects, and figuring things out along the way, and I am also learning how AI automations work. Always learning, always evolving, and enjoying the process one step at a time.
+                    </p>
+                </motion.div>
             </div>
         </section>
     );
